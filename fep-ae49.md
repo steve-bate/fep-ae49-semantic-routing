@@ -4,7 +4,6 @@ authors: Steve Bate <svc-fep@stevebate.net>
 type: implementation
 status: DRAFT
 discussionsTo: https://github.com/steve-bate/fep-ae49-semantic-routing/issues
-dateReceived: 2026-04-24
 ---
 # FEP-ae49: Semantic Routing for ActivityPub
 
