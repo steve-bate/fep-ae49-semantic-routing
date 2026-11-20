@@ -3,9 +3,8 @@ slug: ae49
 authors: Steve Bate <svc-fep@stevebate.net>
 type: implementation
 status: DRAFT
-discussionsTo: https://codeberg.org/steve-bate/fep/issues
+discussionsTo: https://github.com/steve-bate/fep-ae49-semantic-routing/issues
 dateReceived: 2026-04-24
-trackingIssue: https://codeberg.org/fediverse/fep/issues/836
 ---
 # FEP-ae49: Semantic Routing for ActivityPub
 
@@ -78,7 +77,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
 interpreted as described in [RFC2119].
 
 **path-based routing**
-: A request dispatch strategy in which an HTTP server parses the URI path of an incoming request and matches path segments against a static or parameterized route table to determine the handler responsible for the request. In the ActivityPub context, this typically means extracting an actor identifier (such as a username) from the path and using it to look up the corresponding actor record in a local database, without first dereferencing the request URURIL as an ActivityStreams object.
+: A request dispatch strategy in which an HTTP server parses the URI path of an incoming request and matches path segments against a static or parameterized route table to determine the handler responsible for the request. In the ActivityPub context, this typically means extracting an actor identifier (such as a username) from the path and using it to look up the corresponding actor record in a local database, without first dereferencing the request URI as an ActivityStreams object.
 
 **semantic routing**
 : A request dispatch strategy for ActivityPub servers in which the server processes a request based on the target URI rather than pattern matching on URI path segments. The dispatch uses ActivityPub objects and their relationships to determine how to process the request.
@@ -252,7 +251,7 @@ The same procedure is used for POST requests to `outbox` URIs.
 
 For `sharedInbox` POST, the algorithm is similar but applied to each local inbox URI targeted for delivery.
 
-For `sharedInbox` GET, the opaque URI is used to identify the request target. The dereferencing or construction of the resulting `OrderedCollectio`n is implementation-dependent.
+For `sharedInbox` GET, the opaque URI is used to identify the request target. The dereferencing or construction of the resulting `OrderedCollection` is implementation-dependent.
 
 ## Security Considerations
 
@@ -308,7 +307,7 @@ the motivation for semantic routing in ActivityPub.
 [SOLID]: https://solidproject.org/TR/protocol "Solid Protocol"
 [URI-AXIOMS]: https://www.w3.org/DesignIssues/Axioms.html "Univeral Resource Identifiers -- Axioms of Web architecture"
 [MITRA]: https://codeberg.org/silverpill/mitra "Mitra"
-[PORTABLE-OBJECTS]: https://codeberg.org/fediverse/fep/src/branch/main/fep/ef61/fep-ef61.md "FEP-EF61 Portable Objects"
+[PORTABLE-OBJECTS]: https://w3id.org/fep/ef61 "FEP-EF61 Portable Objects"
 
 ## Copyright
 
