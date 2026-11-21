@@ -1,6 +1,6 @@
 # FEP-ae49: Semantic Routing for ActivityPub
 
-**Status:** DRAFT · **Type:** implementation · **Author:** Steve Bate · **Received:** 2026-04-24
+**Status:** DRAFT · **Type:** implementation · **Author:** Steve Bate
 
 ## Overview
 
